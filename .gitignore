@@ -1,0 +1,44 @@
+# Rust
+/target
+**/*.rs.bk
+Cargo.lock.bak
+
+# Node / PWA
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Secrets / keys (NEVER commit)
+*.pem
+*.key
+*.p12
+keys/
+secrets/
+.taler-merchant-key*
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Build / test artifacts
+*.log
+/coverage/
+.nyc_output/
+
+# Pilot SME data (anonymised case studies live under pilots/, NOT raw transaction logs)
+/data/
+/raw-pilot-data/
+
+# Local LLM weights (downloaded at build time, not committed)
+/models/*.gguf
+/models/*.safetensors
